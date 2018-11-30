@@ -1,0 +1,31 @@
+page-product-details { 
+
+    .scroll-content{
+        margin-top: 96px !important;
+    }
+    .toolbar-md,
+    .toolbar-ios {
+        min-height: 97px;
+        align-items: flex-start;
+    }    
+    .inner-logo {
+        width: 55px;
+        margin-top: 8px;
+    }
+    .logo-btn{
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        width: 100%;  
+        height: auto;      
+    }    
+    .receipe-image{
+        width:100%;
+         img{
+             border-radius: 4px;
+             border:2px solid #3d332d;
+         }
+    }
+    h4{background: #ffffff;padding: 7px 0;margin-bottom: 20px;font-family: 'Bebas';color: #a46e0e;border: 1px solid #a46e0e;border-radius: 3px; font-weight: 400;}
+    p{margin:5px 0}
+}

@@ -1,0 +1,53 @@
+page-pending-order {
+    .pending-top p{text-align:center; font-weight:300; margin-bottom:3px; color:#3e372e; margin-top:4px; font-size:16px; font-family: 'Bebas';}
+    .pending-top span{text-align:center; display: block; color:#3e372e; font-size:12px; margin-bottom:4px}
+
+    .panel-head{
+        background:#3e372e;
+        font-size:12px;
+        p{color:#fff; margin: 2px 0}
+        p span{color:#ababab}
+        b{font-weight:500}
+        .phead-right{align-items: center}
+        .phead-right .left-div{flex:1 1 auto; padding-right:10px}
+        .phead-right ion-icon{color:#fff}
+    }
+
+    .item-details{
+        font-size:12px;
+        border-bottom:1px dashed #3e372e;
+        margin: 2px 0;
+        ion-col{padding-top:10px; padding-bottom: 10px}
+            p{
+                margin:1px 0;
+                color:#3e372e;
+            }
+            p.ml{
+                font-size:13.5px;
+                color:#241108;
+            }
+            b{color:rgba(36,17,8,0.7); font-size:12px; margin: 2px 0 }
+            p.item-name{color:#a67124; font-weight: 600;}
+            .order-box{
+                background:#fff;
+                display: block; text-align: center;
+                border:1px solid #a67124;
+                padding: 7px 5px;
+                color:#3e372e;
+                border-radius: 4px;
+            }
+        h5{color:#3e372e; font-family: 'Bebas'; font-size:19px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden}
+    }
+    .action-buttons{
+        margin-top:6px;
+        align-items: center;
+        a{margin-right:20px;}
+        img{width:25px;}
+    }
+    .all-info-wrapper ion-row:last-child{
+        border-bottom:0 !important;
+    }
+    .prod-info{background-image:url("../assets/imgs/border-bg.png"); background-repeat: no-repeat; background-position: center right;}
+    .display-off{display: none}
+    .display-on{display: block}
+}

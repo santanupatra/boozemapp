@@ -1,0 +1,151 @@
+<!--
+  Generated template for the PastOrderPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons start>
+        <button ion-button icon-only color="dark" navPop>
+            <ion-icon name="arrow-back"></ion-icon>
+        </button>
+    </ion-buttons>
+    <ion-title>Past Orders</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal">
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="p-0">
+    <ion-row class="pending-top">
+      <ion-col col-4>
+        <p>Order list</p>
+        <span>for 2 vendors</span>
+      </ion-col>
+      <ion-col col-4>
+        <p>Order #</p>
+        <span>2018</span>
+      </ion-col>
+      <ion-col col-4>
+        <p>Bottles</p>
+        <span>22</span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="all-info-wrapper" *ngFor="let order of orders let i = index">
+    <ion-grid class="panel-head">
+      <ion-row>
+        <ion-col col-7>
+          <p>Southern Wines & Spirit</p>
+          <p>ATTN REP:<span>Emily Martin</span></p>
+        </ion-col>
+        <ion-col col-5>
+          <div class="d-flex phead-right">
+            <div class="left-div">
+              <p class="text-right"><b>$ 629.81</b></p>
+              <p class="text-right">Min. Order $ 250</p>
+            </div>
+            <div>
+              <ion-icon ios="ios-arrow-down" md="md-arrow-dropdown"></ion-icon>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div padding>
+      <ion-grid class="p-0">
+        <ion-row class="">
+          <ion-col col-6 class="pt-0">
+            <p class="mt-0 font-12 mb-0">3 Items</p>
+          </ion-col>
+          <ion-col col-6 class="pt-0">
+            <p class="text-right mt-0 font-12 mb-0">Bottles 18</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid class="p-0">
+        <ion-row class="item-details">
+          <ion-col col-7 class="pl-0">
+            <p class="item-name">Scotch</p>
+          </ion-col>
+          <ion-col col-3>
+            <p class="text-center">Par</p>
+          </ion-col>
+          <ion-col col-2>
+            <p class="text-center">Order</p>
+          </ion-col>
+        </ion-row>
+        <ion-row class="item-details">
+          <ion-col col-7 class="pl-0 prod-info">
+            <h5>Johnnie Walker Black</h5>
+            <p class="ml">750 ml</p>
+            <b>Other details go right here</b>
+          </ion-col>
+          <ion-col col-3>
+            <p class="text-center">5/6</p>
+            <p class="text-center">$ 25.99</p>
+          </ion-col>
+          <ion-col col-2>
+            <div class="order-box">2</div>
+          </ion-col>
+        </ion-row>
+        <ion-row class="item-details">
+          <ion-col col-7 class="pl-0 prod-info">
+            <h5>Glenlivet 12 Yr</h5>
+            <p class="ml">1 L</p>
+            <b>Other details go right here</b>
+          </ion-col>
+          <ion-col col-3>
+            <p class="text-center">5/6</p>
+            <p class="text-center">$ 25.99</p>
+          </ion-col>
+          <ion-col col-2>
+            <div class="order-box">2</div>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row class="item-details">
+          <ion-col col-6 class="pl-0">
+            <p class="item-name">Tequila</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-row class="item-details">
+        <ion-col col-7 class="pl-0">
+          <h5>Espolon Silver Tequila</h5>
+          <p class="ml">1 L</p>
+          <b>Other details go right here</b>
+        </ion-col>
+        <ion-col col-3>
+          <p class="text-center">5/6</p>
+          <p class="text-center">$ 25.99</p>
+        </ion-col>
+        <ion-col col-2>
+          <div class="order-box">2</div>
+        </ion-col>
+      </ion-row>
+
+      
+      <ion-row class="item-details">
+        <ion-col col-6>
+          <div class="d-flex action-buttons">
+            <a href=""><img src="assets/imgs/add.png"></a>
+            <a href=""><img src="assets/imgs/delete.png"></a>
+            <a href=""><img src="assets/imgs/share.png"></a>
+          </div>
+        </ion-col>
+        <ion-col col-6>
+          <button ion-button color="royal" block small (click)="addProduct(order.id, i)">Confirm Order</button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+</ion-content>

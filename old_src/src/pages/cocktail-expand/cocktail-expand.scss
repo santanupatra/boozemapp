@@ -1,0 +1,26 @@
+page-cocktail-expand {
+    .scroll-content{
+        margin-top: 96px !important;
+    }
+    .toolbar-md,
+    .toolbar-ios {
+        min-height: 97px;
+        align-items: flex-start;
+    }    
+    .inner-logo {
+        width: 55px;
+        margin-top: 8px;
+    }
+    .logo-btn{
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        width: 100%;  
+        height: auto;      
+    }    
+    .details-wrap{color: #a46e0e; padding: 14px 10px; height:100%; border:1px solid #3d332d; border-radius:5px}
+    .details-wrap p{font-size: 11px}
+    .details-wrap h6{margin-bottom: 20px; font-size: 13px; color: #3d332d;}
+    .details-wrap h6 span, .details-wrap p span{float: right}
+    .cocktail-image img{width:280px; margin:0 auto; display: block}
+}

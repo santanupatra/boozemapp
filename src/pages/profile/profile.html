@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button start menuToggle color="dark">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Profile</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal">
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="pro-pic">
+    <img src="assets/imgs/user1.jpg" alt="">
+    <div class="camera">
+      <ion-icon name="camera"></ion-icon>
+      <input type="file">
+    </div>
+  </div>
+
+  <ion-grid class="profile-form mb-25">
+
+    <ion-row>
+      <ion-col col-4>Name</ion-col>
+      <ion-col col-1>:</ion-col>
+      <ion-col col-7>{{user_details.first_name}} {{user_details.last_name}}</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-4>Business</ion-col>
+      <ion-col col-1>:</ion-col>
+      <ion-col col-7>{{user_details.business_name}}</ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col col-4>Email</ion-col>
+      <ion-col col-1>:</ion-col>
+      <ion-col col-7>{{user_details.email}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-4>Phone</ion-col>
+      <ion-col col-1>:</ion-col>
+      <ion-col col-7>{{user_details.phone}}</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-4>Address</ion-col>
+      <ion-col col-1>:</ion-col>
+      <ion-col col-7>{{user_details.address}}</ion-col>
+    </ion-row>
+
+      <ion-row>
+        <ion-col col-4>City</ion-col>
+        <ion-col col-1>:</ion-col>
+        <ion-col col-7>{{user_details.city}}</ion-col>
+      </ion-row>
+
+        <ion-row>
+          <ion-col col-4>Country</ion-col>
+          <ion-col col-1>:</ion-col>
+          <ion-col col-7>{{user_details.country}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-4>Zip</ion-col>
+            <ion-col col-1>:</ion-col>
+            <ion-col col-7>{{user_details.postcode}}</ion-col>
+          </ion-row>
+  </ion-grid>
+ 
+  <div class="p-btn">
+    <button class="mb-25" ion-button color="primary" (click)="myProfile()">Edit profile</button>
+    <button class="mb-25" ion-button color="primary" (click)="changePassword()">Change Password</button>
+  </div>
+</ion-content>
+
+

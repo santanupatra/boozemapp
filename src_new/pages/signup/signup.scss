@@ -1,0 +1,27 @@
+page-signup {
+	.scroll-content {padding:25px!important}
+	.reg-bg{background: url('../assets/imgs/reg-bg.jpg') no-repeat top center; background-size: cover}
+	.log-reg-wrap{border:1px solid #454545; border-radius: 5px; overflow: hidden; background: rgba(136,136,136,0.1)}
+	.log-reg-wrap .item{background: transparent}
+	.log-reg-wrap .item .item-inner{padding-right:0; border-bottom:1px solid #454545;}
+	.log-reg-wrap.list .item{padding-left:0;}
+	.log-reg-wrap.list .item:last-child{border-bottom:0;}
+	.log-reg-wrap.list .item .icon{margin-left: 12px}
+	.log-reg-wrap.list .item .icon img{width:20px;}
+	.log-reg-wrap.list .item ion-label[fixed]{flex:0 0 35px; min-width:35px; max-width:35px}
+	.log-reg-wrap.list .item .text-input{color:#fff; font-weight: 400}
+	
+	.item-md.item-input.item-input-has-focus .item-inner,
+	.item-md.item-input.input-has-focus .item-inner{border-bottom-color:#454545; box-shadow:none; -webkit-box-shadow:none;}
+	.list-md .item-input.item-input-has-focus:last-child,
+	.list-md .item-input.input-has-focus:last-child{border-bottom-color:#454545; box-shadow:none; -webkit-box-shadow:none;}
+
+	.item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner,
+	.item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+	border-bottom-color:#454545;-webkit-box-shadow: none; box-shadow: none;}
+	
+
+	.list-ios > .item-block:first-child{border-top:0}
+	
+	.logo{margin:20px auto 40px}
+}

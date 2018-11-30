@@ -1,0 +1,24 @@
+page-cocktail-costing2 {
+    .log-reg-wrap{background:#fff}
+	.log-reg-wrap .item{background: transparent}
+	.log-reg-wrap .item .item-inner{padding-right:0; border-bottom:none;}
+	.log-reg-wrap.list .item{padding-left:0;}
+	.log-reg-wrap.list .item:last-child{border-bottom:0;}
+	.log-reg-wrap.list .item .icon{margin-left: 12px}
+	.log-reg-wrap.list .item .icon img{width:20px;}
+	.log-reg-wrap.list .item ion-label[fixed]{flex:0 0 35px; min-width:35px; max-width:35px}
+	.log-reg-wrap.list .item .text-input{color:#3d332d; border-bottom:1px solid #3d332d;}
+	
+	.item-md.item-input.item-input-has-focus .item-inner, .item-md.item-input.input-has-focus .item-inner{border-bottom:none; box-shadow:none; -webkit-box-shadow:none;}
+	.list-md .item-input.item-input-has-focus:last-child, .list-md .item-input.input-has-focus:last-child{border-bottom-color:none; box-shadow:none; -webkit-box-shadow:none;}
+	.item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner,
+	.item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+	border-bottom-color:#454545;-webkit-box-shadow: none; box-shadow: none;}
+	
+	.list-md .item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child,
+	.list-md .item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child {border-bottom-color:#454545;-webkit-box-shadow: none; box-shadow: none;}
+
+	.list-ios > .item-block:first-child{border-top:0}
+
+	.text-input-md, .text-input-ios {padding-top: 6px; padding-bottom: 6px}
+}

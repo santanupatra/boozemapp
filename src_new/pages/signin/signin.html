@@ -1,0 +1,22 @@
+<ion-content padding class="login-bg">
+	<div class="logo"><img src="../assets/imgs/logo.png" alt=""></div>
+	<ion-list class="log-reg-wrap">
+		<ion-item>
+			<ion-label fixed>
+				<span class="icon"><img src="../assets/imgs/icon-user.png" alt=""></span>
+			</ion-label>
+			<ion-input type="text" [(ngModel)]="data.username" placeholder="Username"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label fixed>
+				<span class="icon"><img src="../assets/imgs/icon-password.png" alt=""></span>
+			</ion-label>
+			<ion-input type="password" [(ngModel)]="data.password" placeholder="Password"></ion-input>
+		</ion-item>
+	</ion-list>
+	<button class="mb-25 text-uppercase" ion-button color="primary" block (click)="login(data)">Go to bar</button>
+	<p class="text-center forgot-pass" (click)="forgotpass()">Forgot password?</p>
+	<p class="text-center forgot-pass" (click)="signup()">New to Inteer?</p>
+</ion-content>
+
+

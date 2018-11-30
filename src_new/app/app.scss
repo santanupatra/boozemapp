@@ -1,0 +1,80 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700');
+
+body{font-size:14px; color:#000; font-family: 'Montserrat', sans-serif; font-weight: 400}
+ion-app.md, ion-app.ios{font-size:14px; color:#000; font-family: 'Montserrat', sans-serif; font-weight: 400}
+
+
+
+body, .text-input{font-size:14px; font-family: 'Montserrat', sans-serif;}
+.button-md{text-transform:unset; box-shadow:none}
+.button-ios, .button-md{font-size:14px; font-family: 'Montserrat', sans-serif;}
+.button-small-md, .button-small-ios{font-size:12px; font-family: 'Montserrat', sans-serif;}
+.toolbar-background{background: #000000}
+.toolbar-title{color: #ffffff}
+
+.logo{width:220px; margin:50px auto}
+
+.text-uppercase{text-transform: uppercase}
+.text-center{text-align:center}
+.text-right{text-align:right}
+.medium{font-weight:500 !important}
+.font-16{font-size: 16px !important}
+.font-12{font-size: 12px !important}
+
+.mb-25{margin-bottom:25px}
+.mt-20{margin-top:20px}
+.forgot-pass{margin-top:5px; margin-bottom:8px}
+.forgot-pass a{color:#000; text-decoration:none}
+
+ion-app.md [padding] .scroll-content, ion-app.ios [padding] .scroll-content{padding: 10px;}
+
+.border-top-0{border-top:0 !important}
+.border-bottom-0{border-bottom:0 !important}
+.w-100{width:100% !important}
+.m-0{margin:0 !important}
+.ml-0{margin-left:0 !important}
+.mr-0{margin-right:0 !important}
+.mt-0{margin-top:0 !important}
+.mb-0{margin-bottom:0 !important}
+.p-0{padding:0 !important}
+.pl-0{padding-left:0 !important}
+.pr-0{padding-right:0 !important}
+.pt-0{padding-top:0 !important}
+.pb-0{padding-bottom:0 !important}
+
+.d-flex{display: flex}
+
+.dark-bg{background:#333333}
+.inner-logo{width:110px; margin-top:4px}
+
+.common-title{text-transform: uppercase; text-align: center; width:100%; display: block; margin-bottom: 15px;
+    position: relative; font-weight:500; color:#fff; font-size:16px; padding-bottom: 5px}
+.common-title::before{content: ''; width:25px; height:2px; background: #fff; position: absolute; left:50%; transform: translateX(-50%); bottom:0}
+.common-list{background: #252525; border-radius: 4px; border: 1px solid #000}
+.common-list .item{background: transparent; border-bottom: 1px solid #353535}
+.common-list .item:last-child{border-bottom: none}
+.common-list .item ion-avatar img{width:auto; border-radius: 0; height:36px}
+.common-list .item [item-start]{margin-top:10px!important; margin-bottom:10px !important}
+.common-list .item .item-inner{border-bottom:0}
+.common-list h2{color:#fff}
+
+.footer-menu a{display: block}
+.footer-menu a img{height:24px}
+

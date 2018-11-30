@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button start menuToggle color="dark">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Daily Reports</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal">
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content padding>
+  <div class="image-div">
+    <img src="assets/imgs/cr.png" alt="">
+  </div>
+
+  <ion-list class="custom-list">
+    <div class="underlist-div">
+      <div>
+        <ul>
+          <li>
+            <div class="div-section">
+              <figure>
+                <img src="assets/imgs/deluxe.png" alt="">
+                <figcaption>
+                    Top Loss
+                </figcaption>  
+              </figure>
+            </div>
+          </li>
+
+          <li>
+            <div class="div-section">
+              <figure>
+                <h6>12</h6>
+                <figcaption>
+                  New Bottles
+                </figcaption>
+              </figure>
+            </div>
+          </li>
+
+          <li>
+            <div class="div-section">
+              <figure>
+                <h6>$36,512</h6>
+                <figcaption>
+                  Total Inventory
+                </figcaption>
+              </figure>
+            </div>          
+          </li>
+
+          <li>
+            <div class="div-section">
+              <figure>
+                <img src="assets/imgs/agegateBottle1.png" alt="">
+                <figcaption>
+                  Top Sold
+                </figcaption>
+              </figure>
+            </div>
+          </li>
+        </ul>
+      
+        <div class="social-div">
+          <ul>
+            <li>
+              <a (click)="goToExpanded();">
+                <img src="assets/imgs/frd.png" alt="">
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="assets/imgs/cldr.png" alt="">
+              </a>
+            </li>
+          </ul>  
+        </div>
+      </div>
+    </div>
+  </ion-list>
+</ion-content>

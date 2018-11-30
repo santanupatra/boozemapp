@@ -1,0 +1,58 @@
+page-arriving-order {
+    .scroll-content{
+        margin-top: 96px !important;
+    }
+    .toolbar-md,
+    .toolbar-ios {
+        min-height: 97px;
+        align-items: flex-start;
+    }    
+    .inner-logo {
+        width: 55px;
+        margin-top: 8px;
+    }
+    .logo-btn{
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        width: 100%;  
+        height: auto;      
+    }    
+    .pending-top p{text-align:center; font-weight:300; margin-bottom:0; color:#3d332d; margin-top:4px; font-size:12px}
+    .pending-top span{text-align:center; display: block; color:#a46e0e; font-size:12px; margin-bottom:4px}
+
+    .panel-head{
+        background:#3d332d;
+        font-size:12px;
+        p{color:#ffffff; margin: 0}
+        p span{color:#dbba4c}
+        b{font-weight:500}
+    }
+
+    .item-details{
+        font-size:12px;
+        border-bottom:1px solid #e1e1e1;
+        ion-col{padding-top:8px; padding-bottom: 8px}
+            p{
+                margin:1px 0;
+                color:/*#a46e0e*/ #000000;
+            }
+            p.item-name{/*color:#3d332d*/ color: #a46e0e;}
+            .order-box{
+                background:#f3f3f3;
+                display: block; text-align: center;
+                border:1px solid #a46e0e;
+                padding: 7px 5px;
+                color:/*#a46e0e*/ #000000;
+            }
+    }
+    .action-buttons{
+        margin-top:6px;
+        align-items: center;
+        a{margin-right:10px;}
+        img{width:25px;}
+    }
+    .all-info-wrapper ion-row:last-child{
+        border-bottom:0 !important;
+    }
+}

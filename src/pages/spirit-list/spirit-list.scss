@@ -1,0 +1,39 @@
+page-spirit-list{
+    .scroll-content{
+        margin-top: 96px !important;
+    }
+    .toolbar-md,
+    .toolbar-ios {
+        min-height: 97px;
+        align-items: flex-start;
+    }    
+    .inner-logo {
+        width: 55px;
+        margin-top: 8px;
+    }
+    .logo-btn{
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        width: 100%;  
+        height: auto;      
+    }    
+    .list-ios > .item-block:first-child {border-top: 0;}
+    .list-ios > .item-block:last-child {border-bottom: 0;}
+
+    button.item-ios:not([detail-none]) .item-inner{
+        background-image:none;
+        padding-right:0;
+    }
+    .label{color:rgb(61,51,45); text-transform: uppercase; font-family: 'Bebas'; font-size:22px; margin:16px 0}
+    .item-ios, .item-md{padding-left:0; background:transparent}
+    .item-md.item-block .item-inner{padding-right:0;}
+    .list-ios,
+    .list-md {
+        margin: -1px 0 0;
+        // max-height: 381px;
+        max-height: calc(100% - 79px);
+        overflow: hidden;
+        overflow-y: scroll;
+    }    
+}

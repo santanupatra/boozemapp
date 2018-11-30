@@ -1,0 +1,9 @@
+page-booze-list {
+    button.item-ios:not([detail-none]) .item-inner{
+        background-image:none;
+        padding-right:0;
+    }
+    .label{color:rgb(61,51,45); text-transform: uppercase; font-family: 'Bebas'; font-size:24px; margin:16px 0}
+    .item-ios, .item-md{padding-left:0}
+    .item-md.item-block .item-inner{padding-right:0}
+}

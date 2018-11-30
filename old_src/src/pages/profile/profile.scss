@@ -1,0 +1,41 @@
+page-profile {
+    .scroll-content{
+        margin-top: 96px !important;
+    }
+    .toolbar-md,
+    .toolbar-ios {
+        min-height: 97px;
+        align-items: flex-start;
+    }    
+    .inner-logo {
+        width: 55px;
+        margin-top: 8px;
+    }
+    .logo-btn{
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        width: 100%;  
+        height: auto;      
+    }     
+    .pro-pic{width:90px; height:90px; border-radius: 100%; position: relative; margin: 20px auto 10px; overflow: hidden}
+    .pro-pic img{width:100%; height:100%; object-fit: cover}
+    .pro-pic .camera{width:22px; height:22px; font-size:18px; position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); color:#fff; z-index: 1; text-align: center; overflow: hidden}
+    .pro-pic .camera input[type='file']{width:100%; height:100%; position: absolute; top:0; left:0; opacity: 0}
+
+    .profile-form b{display: block; margin: 3px 0; font-size: 16px}
+    .profile-form .input[type="text"]{border-bottom:1px solid #03a9f4; }
+    .profile-form .text-input{margin: 2px 0; width:100%; font-size: 16px}
+
+    .add{font-weight: 500; font-size:12px; padding: 3px; display: inline-block; text-decoration: none}
+    .volunteer-list .list .item-block .item-inner{border-bottom:0; padding-right:0}
+
+    .label{margin-top: 5px !important; margin-bottom: 5px !important;}
+    ion-avatar{margin-top: 5px !important; margin-bottom: 5px !important;}
+    canvas {
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    } 
+}

@@ -1,0 +1,35 @@
+page-home {
+    .home-bar-wrap{
+        width:100%;
+    }
+    .wine-shelf{
+        width:100%; height:134px;
+        background: url('../assets/imgs/bar-wine-shelf.png') no-repeat bottom center;
+        background-size: contain;
+        padding: 0 10px;
+        display: flex;
+        flex-wrap: nowrap;
+            .wine-holder, .wine-holder-shake{
+                width:19%;
+                margin: 11px 0.5% 0;
+                height: 80px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                position: relative;
+                    img{
+                        width:auto;
+                        max-height: 100%;
+                        max-width:35px;
+                    }
+        }
+    }
+    .cross-none{display: none}
+    .wine-holder .close{position:absolute; right:0 ;top:0;}
+    .wine-holder-shake{border:1px dashed #e1e1e1}
+    .wine-holder-shake .close{position:absolute; right:0 ;top:0;}
+    .wine-holder-shake img{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    }
+}

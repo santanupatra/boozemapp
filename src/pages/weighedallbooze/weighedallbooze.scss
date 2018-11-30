@@ -1,0 +1,76 @@
+page-weighedallbooze {
+    .scroll-content{
+        margin-top: 96px !important;
+    }
+    .toolbar-md,
+    .toolbar-ios {
+        min-height: 97px;
+        align-items: flex-start;
+    }    
+    .inner-logo {
+        width: 55px;
+        margin-top: 8px;
+    }
+    .logo-btn{
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        width: 100%;  
+        height: auto;      
+    }    
+.table-div{
+        width: 100%;
+        float: left;
+        table{
+            width: 100%;
+            table-layout: auto;
+            border-spacing: 0;
+            border-collapse: collapse;
+            empty-cells: hide;
+            border: 0;           
+            tbody tr td{
+                vertical-align: middle;
+                border: 1px solid #efece9;
+                padding: 10px 0;
+                width: 50%;
+                .bottle-div{
+                    padding: 6px 0;
+                    margin: 0 auto;
+                    .bottle-div img{
+                        max-width: 100%;
+                    }
+                }                
+            }
+            .text-div{
+                padding: 0;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .circle-div{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50px;
+                    border: 2px solid #a46e0e;
+                    background-color:#e2d0b2;
+                    color: #000000;
+                    text-align: center;
+                    position: absolute;
+                    display: flex;
+                    overflow: hidden;
+                    align-items: center;
+                    justify-content: center;
+                    top: 0;
+                    right: 10px;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                h1{
+                    margin: 0;
+                    text-align: center;
+                    color: #6f6b6b;
+                }
+            }
+        }
+    }    
+}

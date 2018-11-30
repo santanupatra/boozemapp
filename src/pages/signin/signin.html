@@ -1,0 +1,36 @@
+<ion-content padding>
+	<div class="login-wrap">
+		<form [formGroup]="form" (ngSubmit)="loginUser(form.value)">
+		<div class="upper-area">
+			<div class="logo">
+				<img src="assets/imgs/logo.png" alt="">
+			</div>
+			<ion-list class="log-reg-wrap">
+				<ion-item>
+					<ion-label fixed>
+						<span class="icon">
+							<img src="assets/imgs/icon-user.png" alt="">
+						</span>
+					</ion-label>
+					
+				<ion-input type="text" placeholder="Username" formControlName="username" required ></ion-input>
+</ion-item>
+				<ion-item>
+					<ion-label fixed>
+						<span class="icon">
+							<img src="assets/imgs/icon-password.png" alt="">
+						</span>
+					</ion-label>
+					<ion-input type="password" placeholder="Password" formControlName="password" required></ion-input>								
+				</ion-item>
+			</ion-list>
+		</div>
+		<div class="lower-area">
+				<button ion-button color="primary" block [disabled]="!form.valid">Go To Bar</button>
+				<p class="text-center forgot-pass" (click)="onForgotPassword()" >Forgot password?</p>
+				<p class="text-center forgot-pass" (click)="onSignup()" >New to Inteer?</p>
+		</div>
+	</form>
+	</div>
+</ion-content>
+

@@ -1,0 +1,30 @@
+page-search { 	
+	.search-header, .search-header .searchbar {box-shadow:none; background:#fff}
+	.search-header .searchbar-input{box-shadow:none; background:#fafafa}
+	.search-header:after{background-image:none}
+	
+	.home-content-wrap .card-content{padding:10px}
+	.home-content-wrap .info{font-size:12px; color:#7d7d7d; margin-bottom:10px}
+	.home-content-wrap .item{border:0!important}
+	
+	
+	.link-grid{border-top:1px solid #e1e1e1}
+	.link-grid button{padding-left:5px; padding-right:5px}
+	.link-grid button .icon{color:#747474}
+	.ft{
+        height: auto !important;
+        overflow: hidden !important;
+        margin: 0px auto !important;
+        position: fixed !important;
+        right: 0 !important;
+        left: 0 !important;
+        bottom: -3px !important;
+        z-index: -1;
+    }
+    canvas {
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+}

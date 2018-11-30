@@ -1,0 +1,30 @@
+<ion-header class="search-header">
+    <ion-searchbar (ionInput)="getItems($event)" [(ngModel)]="serchkey"></ion-searchbar>
+</ion-header>
+
+
+<ion-content padding>
+	
+	<ion-list *ngIf="show">
+	  
+	  <ion-item>
+	    <ion-avatar item-start>
+	      <img src="assets/imgs/img-1.jpg">
+	    </ion-avatar>
+	    <h2>Rui Liu</h2>
+	    <p>Lead Designer</p>
+	  </ion-item>
+	  
+	  <ion-item>
+	    <ion-avatar item-start>
+	      <img src="assets/imgs/img-1.jpg">
+	    </ion-avatar>
+	    <h2>Rui Liu</h2>
+	    <p>Lead Designer</p>
+	  </ion-item>
+
+	</ion-list>
+	
+</ion-content>
+<lottie-animation-view [options]="lottieConfig" [width]="750" [height]="1334">
+	</lottie-animation-view>

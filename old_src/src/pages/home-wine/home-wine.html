@@ -1,0 +1,76 @@
+<!--
+  Generated template for the HomeWinePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Wine</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="dark-bg">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <div class="home-wine-wrap">
+          <div class="wine-shelf">
+            <div [class]="className" ion-long-press [interval]="400" (onPressStart)="pressed()" (onPressing)="active()" (onPressEnd)="released()">
+              <img src="assets/imgs/winebottle-1.png" alt="image">
+              <a href="" class="close"><ion-icon name="close-circle"></ion-icon></a>
+            </div>
+            <div class="wine-holder">
+              <img src="assets/imgs/winebottle-2.png" alt="image">
+            </div>
+            <div class="wine-holder">
+              <img src="assets/imgs/winebottle-3.png" alt="image">
+            </div>
+            <div class="wine-holder">
+              <img src="assets/imgs/winebottle-4.png" alt="image">
+            </div>
+          </div>
+          <div class="wine-shelf">
+            <div class="wine-holder">
+              <img src="assets/imgs/winebottle-1.png" alt="image">
+            </div>
+            <div class="wine-holder">
+              <img src="assets/imgs/winebottle-2.png" alt="image">
+            </div>
+            <div class="wine-holder">
+              <img src="assets/imgs/winebottle-3.png" alt="image">
+            </div>
+            <div class="wine-holder">
+              <img src="assets/imgs/winebottle-4.png" alt="image">
+            </div>
+            <div class="wine-holder">
+              <img src="assets/imgs/winebottle-5.png" alt="image">
+            </div>
+          </div>
+          <div class="wine-shelf">
+            <div class="wine-holder">
+              <img src="assets/imgs/winebottle-1.png" alt="image">
+            </div>
+            <div class="wine-holder">
+              <img src="assets/imgs/winebottle-3.png" alt="image">
+            </div>
+            <div class="wine-holder">
+              <img src="assets/imgs/winebottle-4.png" alt="image">
+            </div>
+          </div>
+          <div class="wine-shelf">
+            <div class="wine-holder">
+              <img src="assets/imgs/winebottle-1.png" alt="image">
+            </div>
+            <div class="wine-holder">
+              <img src="assets/imgs/winebottle-2.png" alt="image">
+            </div>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

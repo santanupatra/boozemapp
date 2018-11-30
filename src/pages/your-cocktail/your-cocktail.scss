@@ -1,0 +1,63 @@
+page-your-cocktail {
+    .scroll-content{
+        margin-top: 40px !important;
+    }
+    .toolbar-md,
+    .toolbar-ios {        
+        align-items: flex-start;
+    }    
+    .inner-logo {
+        width: 55px;
+        margin-top: 8px;
+    }
+    .logo-btn{
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        width: 100%;  
+        height: auto;      
+    }    
+    .item .item-inner{border-bottom:0 !important}
+    .item .item-inner .label{display:flex; flex-wrap: wrap; flex-direction: column;}
+    .item .item-inner .label span{display: block; color: #a46e0e; font-weight:600; line-height: 1.2}
+    .item .item-inner .label h2{white-space: nowrap;text-overflow: ellipsis; overflow: hidden; font-size:1.9rem;
+        color: #3d332d; font-family: Bebas; margin-bottom:8px}
+    .item{
+        //background: linear-gradient(#252525, #1b1b1b);
+        //background: -moz-linear-gradient(#252525, #1b1b1b);
+        //background: -webkit-linear-gradient(#252525, #1b1b1b);
+        //border-radius: 4px;
+        //border:1px solid #dbba4c  !important;
+        //margin-bottom:20px;
+        padding-left:0;
+            ion-thumbnail{
+                min-width: 60px;
+                min-height: 60px;
+            }
+            ion-thumbnail img{
+                width: 60px;
+                height: 60px;
+                border-radius: 4px;
+            }
+            .item-inner{border-bottom: 1px dashed #a46e0e !important}
+        }
+        .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {border-bottom:none}
+        .list-ios > .item-block:first-child{border-top:none}
+        .item-ios ion-thumbnail[item-start],.item-md ion-thumbnail[item-start] {margin: 10px 16px 10px 0;}
+        .ft{
+            height: 136px !important;
+            overflow: hidden !important;
+            margin: 0px auto !important;
+            position: fixed !important;
+            right: 0 !important;
+            left: 0 !important;
+            bottom: 0 !important;
+            z-index: -1;
+        }
+        canvas {
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }      
+}

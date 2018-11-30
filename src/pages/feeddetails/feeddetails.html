@@ -1,0 +1,46 @@
+
+<ion-content *ngIf="opportunity">
+
+  <img src="{{imgurl}}{{ opportunity.image }}" alt="" style="position: absolute;width: 100%;" *ngIf="opportunity.image">
+  <img src="assets/imgs/img-1.jpg" alt="" style="position: absolute;width: 100%;" *ngIf="!opportunity.image">
+  
+  <p class="imgtext">{{ opportunity.opportunity_name }}</p>
+
+  <ion-list style="margin-top: 58%;">
+    <ion-item>
+      <ion-icon name="navigate" item-start style="color: #3da9f4;"></ion-icon>
+        27284 Strawberry lane
+      <button ion-button clear item-end>Edit</button>
+    </ion-item>
+
+    <ion-item padding>
+      <ion-label floating>Description</ion-label>
+      <ion-input type="text" [(ngModel)]="desc"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <!-- <ion-list>
+    <ion-item class="feed-top pl-0">
+      <ion-avatar item-start>
+        <img src="../assets/imgs/user1.jpg" alt="">
+      </ion-avatar>
+      <h2 class="d-flex">
+        <span>John Doe</span>
+        <span><button ion-button outline round class="mt-0 mb-0">Update Profile</button></span>
+      </h2>
+      <p class="font-12">Lead Designer at RL Creative Studio</p>
+
+      <ion-grid class="pl-0 pr-0 pt-0">
+        <ion-row class="feed-links">
+          <ion-col class="pl-0 pr-0 pt-0"><a href=""><ion-icon name="heart"></ion-icon> Saved</a></ion-col>
+          <ion-col class="pl-0 pr-0 pt-0"><a href=""><ion-icon name="share"></ion-icon> Shared</a></ion-col>
+          <ion-col class="pl-0 pr-0 pt-0"><a href=""><ion-icon name="add"></ion-icon> Post New</a></ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </ion-item>
+  </ion-list> -->
+
+
+</ion-content>

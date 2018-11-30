@@ -1,0 +1,15 @@
+page-cocktail-total-price {
+    .item{border-top: 0 !important; border-bottom:1px dashed #3e372e !important; padding-left:8px; margin-bottom: 5px}
+    .item .item-inner{
+        border:none !important;
+        border-radius: 0;
+    }
+    ion-item .item-inner .label{
+        display: flex;
+        justify-content: space-between;
+            p{color:#3d332d; font-size: 18px}
+            b{font-weight: 500; color:#3e372e; font-size:18px;}
+    }
+    .label.label-md{margin-right:0}
+    ion-fab[bottom] {bottom: 66px;}
+}

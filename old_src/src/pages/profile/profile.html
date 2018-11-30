@@ -1,0 +1,107 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons start>
+          <button ion-button icon-only color="royal" navPop>
+            <ion-icon name="arrow-back"></ion-icon>
+          </button>
+        </ion-buttons>
+    <ion-title class="logo-btn">
+      <img src="assets/imgs/bz.png" alt="" class="inner-logo">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="pro-pic">
+    <img src="assets/imgs/user1.jpg" alt="">
+    <div class="camera">
+      <ion-icon name="camera"></ion-icon>
+      <input type="file">
+    </div>
+  </div>
+
+  <ion-grid class="profile-form mb-25">
+
+    <ion-row>
+      <ion-col col-4>Name</ion-col>
+      <ion-col col-1>:</ion-col>
+      <ion-col col-7>{{user_details.first_name}} {{user_details.last_name}}</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-4>Business</ion-col>
+      <ion-col col-1>:</ion-col>
+      <ion-col col-7>{{user_details.business_name}}</ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col col-4>Email</ion-col>
+      <ion-col col-1>:</ion-col>
+      <ion-col col-7>{{user_details.email}}</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-4>Phone</ion-col>
+      <ion-col col-1>:</ion-col>
+      <ion-col col-7>{{user_details.phone}}</ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-4>Address</ion-col>
+      <ion-col col-1>:</ion-col>
+      <ion-col col-7>{{user_details.address}}</ion-col>
+    </ion-row>
+
+      <ion-row>
+        <ion-col col-4>City</ion-col>
+        <ion-col col-1>:</ion-col>
+        <ion-col col-7>{{user_details.city}}</ion-col>
+      </ion-row>
+
+        <ion-row>
+          <ion-col col-4>Country</ion-col>
+          <ion-col col-1>:</ion-col>
+          <ion-col col-7>{{user_details.country}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-4>Zip</ion-col>
+            <ion-col col-1>:</ion-col>
+            <ion-col col-7>{{user_details.postcode}}</ion-col>
+          </ion-row>
+  </ion-grid>
+ 
+
+  <!--<ion-grid class="pt-0 pb-0">
+    <ion-row>
+      <ion-col col-6 class="pt-0 pb-0">
+        <p class="font-16 medium mt-0 mb-0">Volunteer of</p>
+      </ion-col>
+      <ion-col col-6 class="text-right pt-0 pb-0">
+        <a href="" class="add">Add</a>
+        <a href="" class="add">Manage</a>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-grid class="volunteer-list">
+    <ion-row>
+      <ion-col col-12>
+        <ion-list class="mb-0">
+          <ion-item class="pl-0 border-top-0 border-bottom-0">
+            <ion-avatar item-start>
+              <img src="../assets/imgs/user1.jpg">
+            </ion-avatar>
+            <h2 class="medium">Autonomous Driving Club</h2>
+            <p class="font-12">2325 Oakwood Dr. MI</p>
+          </ion-item>      
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>-->
+
+  <button class="mb-25" ion-button color="primary" (click)="myProfile()">Edit profile</button>
+  <button class="mb-25" ion-button color="primary" (click)="changePassword()">Change Password</button>
+</ion-content>
+<lottie-animation-view [options]="lottieConfig" [width]="750" [height]="1334">
+	</lottie-animation-view>
+

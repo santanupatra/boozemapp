@@ -1,0 +1,54 @@
+<ion-header>
+	<ion-toolbar>
+	  <ion-buttons start>
+				<button ion-button icon-only color="dark" navPop>
+            <ion-icon name="arrow-back"></ion-icon>
+        </button>
+	  </ion-buttons>
+	  <ion-title>My Profile</ion-title>	  
+	</ion-toolbar>
+  </ion-header>
+
+<ion-content padding>
+	<form [formGroup]="rForm" novalidate>
+	<ion-list>
+		<ion-item>
+			<ion-input type="text" placeholder="Your First Name" formControlName="first_name" value="" required></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-input type="text" placeholder="Your Last Name" formControlName="last_name" value="" required></ion-input>
+		</ion-item>
+
+		<ion-item>
+				<ion-input type="text" placeholder="Business Name" formControlName="business_name" value="" required></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-input type="text" placeholder="Your Email" formControlName="email" value="" required></ion-input>
+		</ion-item>
+
+		<ion-item>
+				<ion-input type="text" placeholder="Your Phone NO" formControlName="phone" value="" required></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-input type="text" placeholder="Your Location" formControlName="address" value=""></ion-input>
+		</ion-item>
+
+		<ion-item>
+				<ion-input type="text" placeholder="Your City" formControlName="city" value=""></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-input type="text" placeholder="Your Country" formControlName="country"></ion-input>
+		</ion-item>
+
+		<ion-item>
+				<ion-input type="text" placeholder="Your Postcode" formControlName="postcode"></ion-input>
+			</ion-item>
+
+	</ion-list>
+	<button ion-button color="primary" round block type="submit" [disabled]="!rForm.valid || !isValidEmail" block round (click)="onSubmit(rForm.value)">Submit</button>
+</form>
+</ion-content>

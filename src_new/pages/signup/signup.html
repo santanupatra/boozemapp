@@ -1,0 +1,60 @@
+<ion-content padding class="reg-bg">
+	<div class="logo"><img src="../assets/imgs/logo.png" alt=""></div>
+
+	<ion-list class="log-reg-wrap">
+		<ion-item>
+			<ion-label fixed>
+				<span class="icon">
+					<img src="../assets/imgs/icon-user.png" alt="">
+				</span>
+			</ion-label>
+			<ion-input type="text" [(ngModel)]="data.username" placeholder="Username"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label fixed>
+				<span class="icon">
+					<img src="../assets/imgs/icon-password.png" alt="">
+				</span>
+			</ion-label>
+			<ion-input type="password" [(ngModel)]="data.password" placeholder="Password"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label fixed>
+				<span class="icon">
+					<img src="../assets/imgs/icon-password.png" alt="">
+				</span>
+			</ion-label>
+			<ion-input type="password" [(ngModel)]="data.password" placeholder="Confirm password"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-label fixed>
+				<span class="icon">
+					<img src="../assets/imgs/icon-mail.png" alt="">
+				</span>
+			</ion-label>
+			<ion-input type="text" [(ngModel)]="data.email" placeholder="Email"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label fixed>
+				<span class="icon">
+					<img src="../assets/imgs/icon-zip.png" alt="">
+				</span>
+			</ion-label>
+			<ion-input type="text" [(ngModel)]="data.location" placeholder="Zip code"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label fixed>
+				<span class="icon">
+					<img src="../assets/imgs/icon-level.png" alt="">
+				</span>
+			</ion-label>
+			<ion-input type="text" [(ngModel)]="data.phonenumber" placeholder="Level of access"></ion-input>
+		</ion-item>
+	</ion-list>
+
+	<button class="mb-25 text-uppercase" ion-button color="primary" block (click)="Signup(data)">Register</button>
+	
+	<!-- <p class="text-center forgot-pass"><a href="">Forgot password?</a></p>
+	<p class="text-center forgot-pass" (click)="signin()">Already have an account?</p> -->
+</ion-content>

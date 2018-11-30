@@ -1,0 +1,141 @@
+<!-- <ion-nav [root]="rootPage"></ion-nav> -->
+
+<ion-split-pane>
+    <!--<ion-menu [content]="content">
+        <ion-content class="left-menu-panel">
+            <ion-card>
+                    
+
+                    <ion-item menuClose (click)="boozeList()">
+                        <span><img src="assets/imgs/booze-icon.png" alt=""></span>                   
+                    </ion-item>
+
+                    <ion-item menuClose (click)="cocktailList()">
+                        <span><img src="assets/imgs/menu-cocktail.png" alt=""></span>                    
+                    </ion-item>
+               
+                    <ion-item menuClose (click)="orders();">
+                        <span><img src="assets/imgs/menu-order.png" alt=""></span>
+                    </ion-item>
+
+                    <ion-item menuClose (click)="weighBooze();">
+                        <span><img src="assets/imgs/menu-wine-bottle.png" alt=""></span>
+                    </ion-item>
+
+                    <ion-item menuClose (click)="awaits();">
+                        <span><img src="assets/imgs/menu-champagne.png" alt=""></span>
+                    </ion-item>
+
+                    <ion-item menuClose (click)="goToReport()">
+                        <span><img src="assets/imgs/menu-report.png" alt=""></span>                        
+                    </ion-item>
+
+                    <ion-item menuClose (click)="profile()">
+                        <span><img src="assets/imgs/menu-report.png" alt=""></span>                   
+                    </ion-item>
+                <ion-item menuClose (click)="logout()">
+                    <span><img src="assets/imgs/menu-logout.png" alt=""></span>
+                </ion-item>
+            </ion-card>
+        </ion-content>
+    </ion-menu>-->
+
+    <ion-menu [content]="content">
+        <ion-content class="left-menu-panel">
+            <ion-card>
+                <ion-item menuClose (click)="boozeList()">
+                    <span>
+                        <img src="assets/imgs/booze-icon.png" alt="">
+                    </span>
+                </ion-item>
+                <ion-item menuClose (click)="weighBooze()">
+                    <span>
+                        <img src="assets/imgs/menu-wine-bottle.png" alt="">
+                    </span>
+                </ion-item>
+                <ion-item menuClose (click)="cocktailList()">
+                    <span>
+                        <img src="assets/imgs/menu-cocktail.png" alt="">
+                    </span>
+                </ion-item>
+                <ion-item menuClose (click)="awaits()">
+                    <span>
+                        <img src="assets/imgs/menu-champagne.png" alt="">
+                    </span>
+                </ion-item>
+                <ion-item menuClose>
+                    <span (click)="orders()">
+                        <img src="assets/imgs/menu-order.png" alt="">
+                    </span>
+                </ion-item>
+                <!-- <ion-item menuClose (click)="goToWeighbooze()">
+                    <span>
+                        <img src="../assets/imgs/menu-weigh.png" alt="">
+                    </span>
+                    <p>Weigh Booze</p> 
+                </ion-item>
+                <ion-item menuClose (click)="fabourite()">
+                    <span>
+                        <img src="../assets/imgs/menu-memories.png" alt="">
+                    </span>
+                    <p>Memories Awaits</p> 
+                </ion-item> -->
+                <ion-item menuClose (click)="profile()">
+                    <span>
+                        <img src="assets/imgs/menu-report.png" alt="">
+                    </span>
+                </ion-item>
+                <ion-item menuClose (click)="logout()">
+                    <span>
+                        <img src="assets/imgs/menu-logout.png" alt="">
+                    </span>
+                </ion-item>
+            </ion-card>
+        </ion-content>
+    </ion-menu>
+
+
+
+    <!-- main navigation -->
+    <ion-nav [root]="rootPage" #content swipeBackEnabled="false" main name="app"></ion-nav>
+    <ion-footer *ngIf="!footerIsHidden">
+            <ion-toolbar class="p-0">
+                <ion-grid class="p-0">
+                    <ion-row class="footer-links">
+                        <ion-col text-center>
+                            <a class="active" (click)="goToHome()">
+                                <span class="footer-icon">
+                                    <img src="assets/imgs/footer-home.png" alt="image">
+                                </span>
+                                <p>Home</p>
+                            </a>
+                        </ion-col>
+                        <ion-col text-center>
+                            <a (click)="selectrepair()">
+                                <span class="footer-icon">
+                                    <img src="assets/imgs/footer-memories.png" alt="image">
+                                </span>
+                                <p>Memories</p>
+                            </a>
+                        </ion-col>
+                        <ion-col text-center>
+                            <a (click)="goToReport()">
+                                <span class="footer-icon">
+                                    <img src="assets/imgs/footer-report.png" alt="image">
+                                </span>
+                                <p>Reports</p>
+                            </a>
+                        </ion-col>
+                        <ion-col text-center>
+                            <a (click)="orders();">
+                                <span class="footer-icon">
+                                    <img src="assets/imgs/footer-order.png" alt="image">
+                                </span>
+                                <p>Orders</p>
+                            </a>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-toolbar>
+        </ion-footer>
+</ion-split-pane>
