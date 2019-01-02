@@ -1,37 +1,54 @@
-<!--
-  Generated template for the ProductDetailsPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-  <ion-toolbar>    
-    <ion-buttons start>
-        <button ion-button icon-only color="dark" navPop>
-          <ion-icon name="arrow-back"></ion-icon>
+    <ion-toolbar>
+      <ion-buttons start>
+          <button ion-button icon-only color="dark" navPop>
+            <ion-icon name="arrow-dropleft"></ion-icon>
         </button>
-    </ion-buttons>
-    <ion-title>
-       Recipes
-    </ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only color="royal">
-        <ion-icon name="search"></ion-icon>
-      </button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
-
-<ion-content padding>
-  <div>
-    <div class="receipe-image">
-      <img src="{{image}}" alt="">
-    </div>    
-    <p>{{name}}</p>
-    <p>${{price}}</p>
-    <p>{{description}}</p>
-    <button ion-button block class="text-uppercase" (click)="addProduct(id);">Add product</button>
-  </div>
-</ion-content>
+      </ion-buttons>
+      <ion-title>Product Details</ion-title>
+      <ion-buttons end>
+        <button ion-button icon-only color="royal">
+          <ion-icon name="search"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <div class="image-div">
+        <img src="{{image}}" alt="">
+    </div>
+  
+    <div class="content-div">
+      <h2>{{name}}</h2>
+    </div>
+  
+    <div class="list-section">
+       <h6>
+         price
+       </h6>
+       <h6>
+         <strong>${{price}}</strong>
+       </h6>
+    </div>
+  
+    <div class="list-section">
+       <h6>
+         vendor name
+       </h6>
+       <h6>
+         <strong>Lorem Ipsum</strong>
+       </h6>
+    </div>
+  
+    <div class="detail-txt">
+      <h5>Description:</h5>
+      <p [innerHtml]="description"></p>
+    </div>
+  
+    <div class="lower-area">
+      <button ion-button color="primary" block (click)="addProduct(id);">Add to cart</button>
+    </div>
+  </ion-content>
 

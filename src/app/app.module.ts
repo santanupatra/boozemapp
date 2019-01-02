@@ -10,6 +10,11 @@ import { UserProvider } from '../providers/user/user';
 import { IonicStorageModule } from '@ionic/storage';
 import { LongPressModule } from 'ionic-long-press';
 
+import { Camera } from '@ionic-native/camera';
+import { FileTransfer } from '@ionic-native/file-transfer';
+import { FilePath } from '@ionic-native/file-path';
+import { File } from '@ionic-native/file';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -30,6 +35,11 @@ import { LongPressModule } from 'ionic-long-press';
     StatusBar,
     AuthServiceProvider,
     SplashScreen,
+    Camera,
+    FileTransfer,
+    FilePath,
+    File,
+
     
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserProvider

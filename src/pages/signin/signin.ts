@@ -24,6 +24,7 @@ export class SigninPage {
   public password: AbstractControl;
   public device_type: AbstractControl;
   public device_token_id: AbstractControl;
+  
 
 
   myform: FormGroup;
@@ -48,13 +49,14 @@ export class SigninPage {
     public menu: MenuController,
     public authService: AuthServiceProvider,
     private storage: Storage,
-    public loadingCtrl: LoadingController,
-    public events: Events,
+    public loadingCtrl: LoadingController,    
     private myApp:MyApp,
+    public events: Events
     
-  ) {
-    this.events.publish("Msg", "Hello World");
-
+    
+  ) {    
+    //events.publish('hideMenu', { isHidden: true});
+      this.menu.enable(false, 'leftMenu');
       this.form = builder.group({
         'username': ['', Validators.compose([Validators.required])],
         'password': ['', Validators.compose([Validators.required])]

@@ -8,10 +8,10 @@
   <ion-toolbar>
     <ion-buttons start>
       <button ion-button icon-only color="dark" navPop>
-        <ion-icon name="arrow-back"></ion-icon>
+          <ion-icon name="arrow-dropleft"></ion-icon>
       </button>
     </ion-buttons>
-    <ion-title>Your Drink Menu</ion-title>
+    <ion-title>My Drink Menu</ion-title>
     <ion-buttons end>
       <button ion-button icon-only color="royal">
         <ion-icon name="search"></ion-icon>
@@ -25,34 +25,14 @@
     <ion-row>
       <ion-col col-12>
         <ion-list>
-          <ion-item>
+          <ion-item (click)="details();" *ngFor="let cocktail of cocktailArray">
             <ion-thumbnail item-start>
               <img src="assets/imgs/wine-glass2.jpg">
             </ion-thumbnail>
-            <h2>Green Tea</h2>
-            <span>$12.00</span>
+            <h2>{{cocktail.name}}</h2>
+            <span>{{cocktail.total_amount|currency}}</span>
           </ion-item>
-          <ion-item>
-            <ion-thumbnail item-start>
-              <img src="assets/imgs/wine-glass2.jpg">
-            </ion-thumbnail>
-            <h2>Green Tea</h2>
-            <span>$12.00</span>
-          </ion-item>
-          <ion-item>
-            <ion-thumbnail item-start>
-              <img src="assets/imgs/wine-glass2.jpg">
-            </ion-thumbnail>
-            <h2>Green Tea</h2>
-            <span>$12.00</span>
-          </ion-item>
-          <ion-item>
-            <ion-thumbnail item-start>
-              <img src="assets/imgs/wine-glass2.jpg">
-            </ion-thumbnail>
-            <h2>Green Tea</h2>
-            <span>$12.00</span>
-          </ion-item>
+          
         </ion-list>
       </ion-col>
     </ion-row>

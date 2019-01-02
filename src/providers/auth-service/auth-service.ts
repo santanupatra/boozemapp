@@ -172,7 +172,53 @@ export class AuthServiceProvider {
     });
   }
 
-  
+  getnonboozelist(data: object): Observable<any> {
+    return this.http.post(this.apiUrl + 'products/nonboozeProduct.json', data).map((res: Response) => {
+      return res.json();
+    });
+  }
+
+  getboozeProduct(data: object): Observable<any> {
+    return this.http.post(this.apiUrl + 'products/boozeProduct.json', data).map((res: Response) => {
+      return res.json();
+    });
+  }
+
+  getboozeprice(data: object): Observable<any> {
+    return this.http.post(this.apiUrl + 'products/boozePrice.json', data).map((res: Response) => {
+      return res.json();
+    });
+  }
+
+  addCocktail(data: object): Observable<any> {
+    return this.http.post(this.apiUrl + 'products/addCocktail.json', data).map((res: Response) => {
+      return res.json();
+    });
+  }
+
+  cocktailList(data: object): Observable<any> {
+    return this.http.post(this.apiUrl + 'products/cocktailList.json', data).map((res: Response) => {
+      return res.json();
+    });
+  }
+
+  getboozeselected(data: object): Observable<any> {
+    return this.http.post(this.apiUrl + 'products/getboozeselected.json', data).map((res: Response) => {
+      return res.json();
+    });
+  }
+
+  getnonboozeselected(data: object): Observable<any> {
+    return this.http.post(this.apiUrl + 'products/getnonboozeselected.json', data).map((res: Response) => {
+      return res.json();
+    });
+  }
+
+  getuserdetails(data: object): Observable<any> {
+    return this.http.post(this.apiUrl + 'users/userdetails.json', data).map((res: Response) => {
+      return res.json();
+    });
+  }
 
 
    

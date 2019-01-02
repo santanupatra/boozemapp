@@ -8,7 +8,7 @@
   <ion-toolbar>
     <ion-buttons start>
       <button ion-button icon-only color="dark" navPop>
-        <ion-icon name="arrow-back"></ion-icon>
+          <ion-icon name="arrow-dropleft"></ion-icon>
       </button>
     </ion-buttons>
     <ion-title>Costing Calculate</ion-title>
@@ -21,17 +21,54 @@
 </ion-header> 
 
 
-<ion-content padding>  
+<ion-content padding> 
+    <form [formGroup]="cForm" novalidate>
+        <ion-input type="text" hidden formControlName="booze_id"></ion-input>
+        <ion-input type="text" hidden formControlName="nonbooze_id"></ion-input>
+        <ion-input type="text" hidden formControlName="cocktail_name"></ion-input>
+        <ion-input type="text" hidden formControlName="garnish"></ion-input>
+        <ion-input type="text" formControlName="photo"></ion-input>
     <ion-list class="log-reg-wrap">
+      <div class="main-box"> 
+        <div *ngFor="let booze of boozeArray">
+              <p>{{booze.name}}</p> 
+              <div class="f-box">
+                  <ion-input type="text" placeholder="Ounces" formControlName="booze_ounce"></ion-input>
+              </div>
+              <div class="f-box2">
+                    <ion-input type="text" placeholder="Price" formControlName="booze_price"></ion-input>
+              </div>
+              <div style="clear: both"></div>
+        </div>   
+        </div>
+        <div style="height: 10px;"></div>
+        <div class="main-box"> 
+            <div *ngFor="let nonbooze of nonboozeArray">
+                  <p>{{nonbooze.name}}</p> 
+                  <div class="f-box">
+                      <ion-input type="text" placeholder="Ounces" formControlName="nonbooze_ounce"></ion-input>
+                  </div>
+                  <div class="f-box2">
+                        <ion-input type="text" placeholder="Price" formControlName="nonbooze_price"></ion-input>
+                  </div>
+                  <div style="clear: both"></div>
+            </div>   
+        </div>          
+        <div style="clear: both"></div>
       <ion-item>
-        <ion-input type="text" placeholder="Booze Ounces"></ion-input>
+        <ion-input type="text" placeholder="Garnish Amount" formControlName="garnish_amount"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-input type="text" placeholder="Non-Booze Ounces"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-input type="text" placeholder="Garnish Amount"></ion-input>
+        <div class="pro-pic">
+          <img src="{{pathForImage(lastImage)}}" alt="" *ngIf="pathForImage(lastImage)!= ''">
+          <img src="assets/imgs/default.png" alt="" *ngIf="pathForImage(lastImage)== ''">
+          <div class="camera">
+            <ion-icon name="camera" (click)="presentActionSheet()"></ion-icon>
+            
+          </div>
+        </div>
       </ion-item>
     </ion-list>
-    <button ion-button block class="text-uppercase" (click)="cocktailTotalPrice();">Calculate</button>  
+    <button ion-button block class="text-uppercase" (click)="cocktailTotalPrice(cForm.value);" style="margin-bottom: 50px">Calculate</button>
+  </form>  
 </ion-content>

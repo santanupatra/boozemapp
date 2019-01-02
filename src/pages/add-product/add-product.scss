@@ -1,3 +1,42 @@
 page-add-product {
-
+    .image-div {
+        text-align: center;
+        border-bottom: 1px dashed #b3b1af;
+        padding-bottom: 16px;
+      }
+      .form-div{}
+      .form-div .list-md {
+        margin: 0;
+      }
+      .form-div .item-md{
+          padding-left: 0;
+      }
+      .form-div .text-input-md{
+          margin: 13px 0;
+          width: 100%;
+      }
+      .form-div .item-md.item-block .item-inner{
+          padding-right: 0;
+      }
+  
+      .txt-div{}
+      .input-div{}
+      .input-div input[type="text"]{
+          width: 100%;
+          border-bottom: 1px solid #dddddd;
+          border-top: 0;
+          border-left: 0;
+          border-right: 0;
+          padding: 15px 0;
+          font-size: 15px;
+          text-transform: capitalize;
+      }
+      .input-div input::-webkit-input-placeholder {
+          color: #bbbaba;
+      }
+      .lower-area{
+          margin-top: 20px;
+          padding-bottom: 60px;
+      }
+      
 }

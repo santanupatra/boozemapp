@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController, LoadingController, Events } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController, LoadingController, Events, MenuController } from 'ionic-angular';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
 /**
@@ -33,8 +33,10 @@ export class SignupPage {
     public alertCtrl: AlertController,
     public loadingCtrl:LoadingController,
     public events: Events,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    public menu: MenuController
   ) {
+    this.menu.enable(false, 'leftMenu');
     this.rForm = fb.group({
       'username': [null, Validators.required],      
       'email':[null, Validators.required],
