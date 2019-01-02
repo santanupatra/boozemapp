@@ -21,4 +21,30 @@ page-cocktail-costing2 {
 	.list-ios > .item-block:first-child{border-top:0}
 
 	.text-input-md, .text-input-ios {padding-top: 6px; padding-bottom: 6px}
+	.f-box{
+		width:48%;
+		float: left;
+	}
+	.main-box{width:100%; border:solid 1px #ccc; border-radius: 4px; overflow: hidden; padding:10px;}
+	.main-box p{
+		font-size: 14px;
+		color:#666;
+		font-weight: 500;
+		padding:0;
+		margin: 0;
+	}
+	.f-box2{
+		width:48%;
+		float: right;
+	}
+	
+	.f-box .text-input{color:#3d332d; border-bottom:1px solid #3d332d;}
+	.f-box2 .text-input{color:#3d332d; border-bottom:1px solid #3d332d;}
+	.f-box .text-input-md, .f-box .text-input-ios {padding-top: 0px; padding-bottom: 6px}
+	.f-box2 .text-input-md, .f-box2 .text-input-ios {padding-top: 0px; padding-bottom: 6px}
+
+	.pro-pic{width:90px; height:90px; border-radius: 100%; position: relative; margin: 20px auto 10px; overflow: hidden}
+    .pro-pic img{width:100%; height:100%; object-fit: cover}
+    .pro-pic .camera{width:22px; height:22px; font-size:18px; position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); color:#fff; z-index: 1; text-align: center; overflow: hidden}
+    .pro-pic .camera input[type='file']{width:100%; height:100%; position: absolute; top:0; left:0; opacity: 0}
 }

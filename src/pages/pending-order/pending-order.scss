@@ -48,6 +48,8 @@ page-pending-order {
         border-bottom:0 !important;
     }
     .prod-info{background-image:url("../assets/imgs/border-bg.png"); background-repeat: no-repeat; background-position: center right;}
-    .display-off{display: none}
-    .display-on{display: block}
+    
+    .all-info-wrapper {
+        margin-bottom: 1px;
+    }
 }

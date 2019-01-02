@@ -1,31 +1,58 @@
 page-product-details { 
 
-    .scroll-content{
-        margin-top: 96px !important;
-    }
-    .toolbar-md,
-    .toolbar-ios {
-        min-height: 97px;
-        align-items: flex-start;
-    }    
-    .inner-logo {
-        width: 55px;
-        margin-top: 8px;
-    }
-    .logo-btn{
-        background-color: transparent;
-        display: flex;
-        justify-content: center;
-        width: 100%;  
-        height: auto;      
-    }    
-    .receipe-image{
-        width:100%;
-         img{
-             border-radius: 4px;
-             border:2px solid #3d332d;
-         }
-    }
-    h4{background: #ffffff;padding: 7px 0;margin-bottom: 20px;font-family: 'Bebas';color: #a46e0e;border: 1px solid #a46e0e;border-radius: 3px; font-weight: 400;}
-    p{margin:5px 0}
+    .image-div {
+        text-align: center;
+        border-bottom: 1px dashed #b3b1af;
+  
+        padding-bottom: 16px;
+      }
+      .content-div {
+        width: 100%;
+        padding: 23px 0 0;
+        h2 {
+          font-weight: 400;
+          font-family: 'Bebas';
+          text-transform: uppercase;
+          font-size: 30px;
+          color: rgb(62, 55, 46);
+        }
+      }
+      .list-section{
+          width: 100%;
+          padding: 4px 0;
+          border-bottom: 1px dashed #b3b1af;
+          margin: 19px 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          h6{
+              font-size: 13.5px;
+              font-family: 'Avenir-Heavy', sans-serif;
+              color: rgba(36, 17, 8, 0.7);
+              font-weight: 400;
+              margin: 0;
+              text-transform: uppercase;
+          }
+      }
+      .detail-txt{
+          margin-bottom: 15px;
+          h5{
+              color: rgba(36, 17, 8, 0.7);
+              font-family: 'Avenir-Heavy',sans-serif;
+              font-weight: 600;
+          }
+          p{
+              margin: 0;
+              font-size: 17px;
+              font-weight: 400;
+              color: rgb(36, 17, 8);
+              font-family: 'Avenir-Book',sans-serif;
+              height: 124.2px;
+              overflow-x: hidden;
+              overflow-y: auto;
+          }
+      }
+      .lower-area{
+          padding-bottom: 70px
+      }
 }

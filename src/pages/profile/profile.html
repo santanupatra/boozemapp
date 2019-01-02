@@ -16,10 +16,12 @@
 
 <ion-content padding>
   <div class="pro-pic">
-    <img src="assets/imgs/user1.jpg" alt="">
+      <img src="{{image_path}}{{pimg}}" alt="" *ngIf="pimg!= ''">
+    <img src="{{pathForImage(lastImage)}}" alt="" *ngIf="pathForImage(lastImage)!= ''">
+    <img src="assets/imgs/user1.jpg" alt="" *ngIf="pathForImage(lastImage)== ''">
     <div class="camera">
-      <ion-icon name="camera"></ion-icon>
-      <input type="file">
+      <ion-icon name="camera" (click)="presentActionSheet()"></ion-icon>
+      
     </div>
   </div>
 

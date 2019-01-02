@@ -39,6 +39,7 @@ export class HomePage {
     public events: Events,
   ) {
     events.publish('hideFooter', { isHidden: false});
+    this.menu.enable(true, 'leftMenu');
     this.user_details =  JSON.parse(localStorage.getItem('userData'));
       this.user_id = this.user_details.id;
     
@@ -117,20 +118,22 @@ export class HomePage {
   
   //className: any='wine-holder';
   pressed(j,i) {
-    if(j && i) {
+    
+    if(j != undefined && i != undefined) {
+      console.log(j)
       this.products[j][i]['className'] = 'wine-holder-shake';
     }
         
   }
   released(j,i){
     //this.className = 'wine-holder';
-    if(j && i) {
+    if(j != undefined && i != undefined) {
       this.products[j][i]['className'] = 'wine-holder';
     }
     
   }
   active(j,i) {
-    if(j && i) {
+    if(j != undefined && i != undefined) {
       this.products[j][i]['cross'] = 'cross-display';
     }
   }

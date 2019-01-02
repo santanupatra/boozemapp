@@ -40,26 +40,26 @@
         </ion-content>
     </ion-menu>-->
 
-    <ion-menu [content]="content">
+    <ion-menu [content]="content" id="leftMenu">
         <ion-content class="left-menu-panel">
             <ion-card>
-                <ion-item menuClose (click)="boozeList()" *ngIf="booze_menu == true" class="active-menu">
+                <ion-item menuClose (click)="goToHome()" *ngIf="home_menu == true" class="active-menu">
                     <span>
                         <img src="assets/imgs/booze-icon.png" alt="">
                     </span>
                 </ion-item>
-                <ion-item menuClose (click)="boozeList()" *ngIf="booze_menu == false">
+                <ion-item menuClose (click)="goToHome()" *ngIf="home_menu == false">
                     <span>
                         <img src="assets/imgs/booze-icon.png" alt="">
                     </span>
                 </ion-item>
                    <!-- ++++++++++++++++ --> 
-                <ion-item menuClose (click)="weighBooze()" *ngIf="weigh_menu == true" class="active-menu">
+                <ion-item menuClose (click)="boozeList()" *ngIf="booze_menu == true" class="active-menu">
                     <span>
                         <img src="assets/imgs/menu-wine-bottle.png" alt="">
                     </span>
                 </ion-item>
-                <ion-item menuClose (click)="weighBooze()" *ngIf="weigh_menu == false">
+                <ion-item menuClose (click)="boozeList()" *ngIf="booze_menu == false">
                     <span>
                         <img src="assets/imgs/menu-wine-bottle.png" alt="">
                     </span>
@@ -88,12 +88,12 @@
                     </span>
                 </ion-item>
                 <!-- ++++++++++++++++ -->
-                <ion-item menuClose (click)="orders()" *ngIf="order_menu == true" class="active-menu">
+                <ion-item menuClose (click)="goToReport()" *ngIf="report_menu == true" class="active-menu">
                     <span>
                         <img src="assets/imgs/menu-order.png" alt="">
                     </span>
                 </ion-item>
-                <ion-item menuClose (click)="orders()" *ngIf="order_menu == false">
+                <ion-item menuClose (click)="goToReport()" *ngIf="report_menu == false">
                     <span>
                         <img src="assets/imgs/menu-order.png" alt="">
                     </span>
@@ -141,7 +141,13 @@
                 <ion-grid class="p-0">
                     <ion-row class="footer-links">
                         <ion-col text-center>
-                            <a class="active" (click)="goToHome()">
+                            <a class="active" (click)="goToHome()" *ngIf="home_footer">
+                                <span class="footer-icon">
+                                    <img src="assets/imgs/footer-home-hover.png" alt="image">                                    
+                                </span>
+                                <p>Home</p>
+                            </a>
+                            <a (click)="goToHome()" *ngIf="!home_footer">
                                 <span class="footer-icon">
                                     <img src="assets/imgs/footer-home.png" alt="image">                                    
                                 </span>
@@ -150,27 +156,46 @@
                             
                         </ion-col>
                         <ion-col text-center>
-                            <a >
+                            <a (click)="awaits()" class="active" *ngIf="memories_footer">
+                                <span class="footer-icon">
+                                    <img src="assets/imgs/footer-memories-hover.png" alt="image">
+                                </span>
+                                <p>Memories</p>
+                            </a>
+                            <a (click)="awaits()" *ngIf="!memories_footer">
                                 <span class="footer-icon">
                                     <img src="assets/imgs/footer-memories.png" alt="image">
                                 </span>
                                 <p>Memories</p>
                             </a>
                         </ion-col>
+
                         <ion-col text-center>
-                            <a (click)="goToReport()">
+                            <a (click)="goToReport()" class="active" *ngIf="reports_footer">
                                 <span class="footer-icon">
-                                    <img src="assets/imgs/footer-report.png" alt="image">
+                                    <img src="assets/imgs/footer-report-hover.png" alt="image">
                                 </span>
                                 <p>Reports</p>
                             </a>
+                            <a (click)="goToReport()" *ngIf="!reports_footer">
+                                    <span class="footer-icon">
+                                        <img src="assets/imgs/footer-report.png" alt="image">
+                                    </span>
+                                    <p>Reports</p>
+                                </a>
                         </ion-col>
                         <ion-col text-center>
-                            <a (click)="orders();">
+                            <a (click)="orders();" class="active" *ngIf="orders_footer">
                                 <span class="footer-icon">
-                                    <img src="assets/imgs/footer-order.png" alt="image">
+                                    <img src="assets/imgs/footer-order-hover.png" alt="image">
                                 </span>
                                 <p>Orders</p>
+                            </a>
+                            <a (click)="orders();" *ngIf="!orders_footer">
+                                    <span class="footer-icon">
+                                        <img src="assets/imgs/footer-order.png" alt="image">
+                                    </span>
+                                    <p>Orders</p>
                             </a>
                         </ion-col>
                     </ion-row>

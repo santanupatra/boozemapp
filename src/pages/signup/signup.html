@@ -29,7 +29,7 @@
 				</ion-label>
 				<ion-input type="password" placeholder="Confirm password" formControlName="con_password" required (ngModelChange)="checkpassword($event,rForm.value)" ></ion-input>				
 			</ion-item>
-            <p *ngIf="!passwordmatch" ion-text color="danger">Password and Confirm password not match </p>				
+            <p *ngIf="!passwordmatch" ion-text color="danger" style="padding-left: 10px">Password and Confirm password not match </p>				
 			<ion-item>
 				<ion-label fixed>
 					<span class="icon">
@@ -38,7 +38,7 @@
 				</ion-label>
 				<ion-input type="text" placeholder="Email Address" formControlName="email" required></ion-input>
 			</ion-item>
-			<p *ngIf="!checkEmailExist" ion-text color="danger">This email already exist. </p>
+			<p *ngIf="!checkEmailExist" ion-text color="danger" style="padding-left: 10px">This email already exist. </p>
 
 			<ion-item>
 				<ion-label fixed>

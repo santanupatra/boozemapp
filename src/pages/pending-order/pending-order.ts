@@ -20,6 +20,7 @@ export class PendingOrderPage {
   private user_details: any;
   private user_id : any;
   public orders: any;
+  public toggleGroups: any = {};
 
   constructor(   
     public navCtrl: NavController,

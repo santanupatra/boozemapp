@@ -8,7 +8,7 @@
   <ion-toolbar>
     <ion-buttons start>
         <button ion-button icon-only color="dark" navPop>
-            <ion-icon name="arrow-back"></ion-icon>
+            <ion-icon name="arrow-dropleft"></ion-icon>
           </button>
     </ion-buttons>
     <ion-title>Cocktails Total Price</ion-title>
@@ -27,15 +27,15 @@
         <ion-list>
           <ion-item>
             <p>Recommend Menu Price:</p>
-            <b>$12.00</b>
+            <b>{{menu_price|currency}}</b>
           </ion-item>
           <ion-item>
             <p>Total Cost:</p>
-            <b>$3.82</b>
+            <b>{{total_price|currency}}</b>
           </ion-item>
           <ion-item>
             <p>Gross Profit:</p>
-            <b>$8.18</b>
+            <b>{{gross_profit|currency}}</b>
           </ion-item>
           <ion-item>
             <p>Gross Profit:</p>
@@ -45,10 +45,23 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+  <form [formGroup]="cForm" novalidate>
+      <ion-input type="text" hidden formControlName="booze_id"></ion-input>
+      <ion-input type="text" hidden formControlName="nonbooze_id"></ion-input>
+      <ion-input type="text" hidden formControlName="cocktail_name"></ion-input>
+      <ion-input type="text" hidden formControlName="garnish"></ion-input>
+      <ion-input type="text" hidden formControlName="booze_ounce"></ion-input>
+      <ion-input type="text" hidden formControlName="booze_price"></ion-input>
+      <ion-input type="text" hidden formControlName="nonbooze_ounce"></ion-input>
+      <ion-input type="text" hidden formControlName="nonbooze_price"></ion-input>
+      <ion-input type="text" hidden formControlName="garnish_amount"></ion-input>
+      <ion-input type="text" hidden formControlName="total_amount"></ion-input>
+      
 
   <ion-fab bottom right>
-    <button ion-fab color="royal">
+    <button ion-fab color="royal" (click)="onSubmit(cForm.value)">
       <ion-icon name="add"></ion-icon>
     </button>
   </ion-fab>
+</form>
 </ion-content>

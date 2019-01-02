@@ -39,7 +39,7 @@
   <ion-grid class="p-0">
     <ion-row>
       <ion-col col-12>
-        <div class="home-bar-wrap">
+        <div class="home-bar-wrap" *ngIf="products.length > 0">
           <div class="wine-shelf" *ngFor="let product of products; let j = index">
             <div *ngFor="let pro of product; let i = index"  [class]="pro.className" ion-long-press [interval]="400" (onPressStart)="pressed(j, i)" (onPressing)="active(j, i)" (onPressEnd)="released(j, i)">
               <img src="{{pro.image}}" alt="image">
@@ -47,9 +47,19 @@
                 <ion-icon name="close-circle"></ion-icon>
               </a>
             </div>            
-          </div>      
-
-
+          </div>  
+         
+        </div>
+        <div class="home-bar-wrap" *ngIf="products.length <= 0">
+          <div class="wine-shelf">
+                       
+          </div>  
+          <div class="wine-shelf">
+                       
+          </div>
+          <div class="wine-shelf">
+                       
+          </div>
         </div>
       </ion-col>
     </ion-row>

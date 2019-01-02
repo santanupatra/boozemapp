@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, Events } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Events, MenuController } from 'ionic-angular';
 
 /**
  * Generated class for the AfterSplashPage page.
@@ -18,8 +18,14 @@ export class AfterSplashPage {
   private anim: any;
   private animationSpeed: number = 1;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public events: Events) {
+  constructor(
+        public navCtrl: NavController,
+        public navParams: NavParams,
+        public events: Events,
+        public menu: MenuController
+      ) {
     events.publish('hideFooter', { isHidden: true});
+    this.menu.enable(false, 'leftMenu');
     this.lottieConfig = {
       path: 'assets/animation-w512-h512.json',
       renderer: 'canvas',
